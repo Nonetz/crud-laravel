@@ -72,16 +72,23 @@
             height: 100px;
         }
 
-        a {
+        .back-link {
             display: inline-block;
             margin-bottom: 20px;
             color: #007bff;
             text-decoration: none;
             font-size: 16px;
+            margin-right: 10px;
+            padding: 8px 16px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
         }
 
-        a:hover {
-            text-decoration: underline;
+        .back-link:hover {
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -91,7 +98,7 @@
     <h2><a href="https://www.malasngoding.com" style="text-decoration: none; color: #333;">www.malasngoding.com</a></h2>
     <h3>Data Pegawai - Tambah Data</h3>
  
-    <a href="/pegawai">Kembali</a>
+    <a href="/pegawai" class="back-link">Kembali</a>
  
     <br/>
     <br/>
