@@ -14,3 +14,7 @@ Route::get('/pegawai/edit/{id}', [PegawaiController::class, 'edit']);
 Route::post('/pegawai/update', [PegawaiController::class, 'update']);
 Route::get('/pegawai/hapus/{id}', [PegawaiController::class, 'hapus']);
 Route::get('/pegawai/cari', [PegawaiController::class, 'cari']);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('/logout', [App\Http\Controllers\HomeController::class, 'logout'])->name('logout');
